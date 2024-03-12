@@ -8,6 +8,12 @@ public class Cylinder extends Circle {
     }
 
     public Cylinder(double height) {
+        // vị trí nak
+//        super(5, "RED");
+//        super.setColor("RED");
+//        super.setRadius(5);
+        this.setColor("RED");
+        this.setRadius(5);
         this.height = height;
     }
 
@@ -22,6 +28,16 @@ public class Cylinder extends Circle {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public double getArea() {
+        return super.getArea()*this.height;
+    }
+
+    @Override
+    public void setRadius(double radius) {
+        super.setRadius(10 + radius);
     }
 
     @Override

@@ -1,6 +1,11 @@
 package task6.Bt1_Circle_Cylinder;
 
 public class Circle {
+    /*
+    Kế thùa:  quan hệ cha con
+        cha: thuộc tính và phương thúc MÀ lớp cha cho phép
+        override:
+     */
     private double radius;
     private String color;
 
@@ -30,6 +35,9 @@ public class Circle {
 
     public double getArea() {
         return Math.PI * radius * radius;
+    }
+    public double getArea(int a){
+        return 0;
     }
 
     @Override
